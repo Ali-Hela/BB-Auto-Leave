@@ -47,6 +47,6 @@ document.onload = setTimeout(function () {
         if (msTillTime < 0) {
             msTillTime += 86400000;
         }
-        setTimeout(() => { window.location.href = "../" }, msTillTime)
+        setTimeout(() => { window.close() }, msTillTime)
     }
 }, 7000);
