@@ -1,3 +1,3 @@
 Timer to leave Blackborad Ultra online classes
 
-![screeenshot](https://github.com/Ali-Hela/Blackboard-Auto-Leaveimage.jpg?raw=true)
+![alt text](https://github.com/Ali-Hela/Blackboard-Auto-Leave/image.jpg?raw=true)
