@@ -1,4 +1,18 @@
-document.onload = setTimeout(function () {
+// ==UserScript==
+// @name         BB auto leave
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://eu.bbcollab.com/collab/ui/session/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=bbcollab.com
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    document.onload = setTimeout(function () {
     let leaveTime;
     let timeStr;
     let hour = 0;
@@ -40,8 +54,9 @@ document.onload = setTimeout(function () {
     // 12 hours to 24 hours then start timer
     function start() {
         button.innerHTML = "Leaving at: " + hour.toString().padStart(2, "0") + ":" + minute.toString().padStart(2, "0");
-        if (now.getHours() >= 12)
+        if (now.getHours() >= 12) {
             hour += 12;
+        }
 
         var msTillTime = new Date(now.getFullYear(), now.getMonth(), now.getDate(), hour, minute, 0, 0) - now;
         if (msTillTime < 0) {
@@ -50,3 +65,5 @@ document.onload = setTimeout(function () {
         setTimeout(() => { window.close() }, msTillTime)
     }
 }, 7000);
+
+})();
