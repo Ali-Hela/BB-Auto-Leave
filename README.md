@@ -1,3 +1,3 @@
-Timer to leave Blackborad Ultra online classes
+Simple timer to leave Blackborad Ultra online classes automatically
 
-![alt text](image.png?raw=true)
+![screeenshot](image.png?raw=true)
